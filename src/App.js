@@ -47,6 +47,11 @@ export default function App () {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
   
+  // useEffect (() => {
+  //   const totalFeedback = good + neutral + bad;
+  //   console.log(`Total Feedback ${totalFeedback}`)
+  // }, [good, neutral, bad]);
+  
   const handleIncrement = feedback => {
     if(feedback === 'good'){
       setGood(good + 1);
